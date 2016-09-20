@@ -9,7 +9,8 @@ namespace Poem
     class Class1
     {
         
-            int wow = 10; 
+            int wow = 10;
+        string lol = "lol"; 
 
     }
 }
