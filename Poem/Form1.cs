@@ -27,29 +27,14 @@ namespace Poem
         
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            /*Figure out how to format a very long string
-             * or figure out if I want different sorts of 
-             * outpits for each of the lines
-             * ALSO: figure out general rules for the application
-            */
-            //test for a program that creates random text 
-            string[] article = { "the", "a", "one", "some", "any", };
-            string[] noun = { "boy", "girl", "dog", "town", "car", };
-            string[] verb = { "drove", "jumped", "ran", "walked", "skipped", };
-            string[] preposition = { "to", "from", "over", "under", "on", };
-
-            /*Another idea would be to have different types of words
-             * and the random class would pull random types of words from their list
-             * and would string them together to make some sort of sentence structure 
-             * the apis would feed into these lists of the words 
-            */
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        { //on form load, send api request to rhyme brain 
+            //on form load, send api request to rhyme brain 
             int maxResults = 5; //arbritrayry number for testing purposes 
             string seedString = txtSeed.ToString();
-            WebRequest request = WebRequest.Create("http://rhymebrain.com/talk?function=getRhymes" + "&word=" + seedString + "&maxResults=" + maxResults + "&jsonp=RhymeBrainResponse";
+
+            WebRequest request = WebRequest.Create("http://rhymebrain.com/talk?function=getRhymes"
+                + "&word=" + seedString
+                + "&maxResults=" + maxResults);
+
             WebResponse resp = request.GetResponse();
             Console.Write(resp);
 
@@ -70,6 +55,30 @@ namespace Poem
 
             Console.Write(jsonwehope);
             resp.Close();
+
+
+
+
+            ///*Figure out how to format a very long string
+            // * or figure out if I want different sorts of 
+            // * outpits for each of the lines
+            // * ALSO: figure out general rules for the application
+            //*/
+            ////test for a program that creates random text 
+            //string[] article = { "the", "a", "one", "some", "any", };
+            //string[] noun = { "boy", "girl", "dog", "town", "car", };
+            //string[] verb = { "drove", "jumped", "ran", "walked", "skipped", };
+            //string[] preposition = { "to", "from", "over", "under", "on", };
+
+            ///*Another idea would be to have different types of words
+            // * and the random class would pull random types of words from their list
+            // * and would string them together to make some sort of sentence structure 
+            // * the apis would feed into these lists of the words 
+            //*/
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        { 
         }
 
         private void btnExit_Click(object sender, EventArgs e)
