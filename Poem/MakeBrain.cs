@@ -36,7 +36,7 @@ namespace Poem
 
             for (int x = 0; x <brainList.Count; x++)
             {
-                Console.Write("Brain Object" + x.ToString());
+                Console.Write("The brain object is " + x.ToString());
                 Console.WriteLine(brainList[x]);
             }
 

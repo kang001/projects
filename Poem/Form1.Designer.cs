@@ -72,7 +72,7 @@
             // lblTreeOutput
             // 
             this.lblTreeOutput.AutoSize = true;
-            this.lblTreeOutput.Location = new System.Drawing.Point(21, 200);
+            this.lblTreeOutput.Location = new System.Drawing.Point(13, 196);
             this.lblTreeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTreeOutput.Name = "lblTreeOutput";
             this.lblTreeOutput.Size = new System.Drawing.Size(152, 17);
@@ -102,7 +102,7 @@
             // lbldisplaySeed
             // 
             this.lbldisplaySeed.AutoSize = true;
-            this.lbldisplaySeed.Location = new System.Drawing.Point(159, 200);
+            this.lbldisplaySeed.Location = new System.Drawing.Point(183, 196);
             this.lbldisplaySeed.Name = "lbldisplaySeed";
             this.lbldisplaySeed.Size = new System.Drawing.Size(0, 17);
             this.lbldisplaySeed.TabIndex = 7;
@@ -126,7 +126,7 @@
             // lblDisplayTree
             // 
             this.lblDisplayTree.AutoSize = true;
-            this.lblDisplayTree.Location = new System.Drawing.Point(21, 238);
+            this.lblDisplayTree.Location = new System.Drawing.Point(45, 234);
             this.lblDisplayTree.Name = "lblDisplayTree";
             this.lblDisplayTree.Size = new System.Drawing.Size(0, 17);
             this.lblDisplayTree.TabIndex = 10;
