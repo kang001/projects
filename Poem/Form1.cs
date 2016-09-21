@@ -27,38 +27,17 @@ namespace Poem
         
         private void btnGenerate_Click(object sender, EventArgs e)
         {
-            //on form load, send api request to rhyme brain 
-            int maxResults = 5; //arbritrayry number for testing purposes 
-            string seedString = txtSeed.ToString();
+            
+            int maxResults = Convert.ToInt32(txtMaxResults.Text); //stores the maxResults textbox
+            string seedString = txtSeed.ToString(); //stores the txtSeed text
+            lbldisplaySeed.Text = txtSeed.Text; //sets the display label equal to the textbox input
 
-            WebRequest request = WebRequest.Create("http://rhymebrain.com/talk?function=getRhymes"
-                + "&word=" + seedString
-                + "&maxResults=" + maxResults);
+            //this statement uses the Brain's class static method to send these variables 
+            Brain.SendRequestToBrain(seedString, maxResults);
 
-            WebResponse resp = request.GetResponse();
-            Console.Write(resp);
-            //string displayTree = resp.ToString;
-
-            Stream data = resp.GetResponseStream();
-
-            StreamReader reader = new StreamReader(data);
-
-            string jsonwehope = reader.ReadToEnd();
-            //maxResults
-            /*this api has a request parameter that allows the user 
-             * to choose however many rhyming words they want returned
-            */
-
-            // DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(WebResponse));
-
-            //TODO Deal with JSON somehow?
-
-
-            Console.Write(jsonwehope);
-            resp.Close();
-
-
-
+            //this statement stores the string returned from the GetRhymes method to a variable 
+            string displayTree = Brain.GetRhymes(seedString);
+            
 
             ///*Figure out how to format a very long string
             // * or figure out if I want different sorts of 

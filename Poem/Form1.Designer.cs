@@ -32,77 +32,125 @@
             this.btnGenerate = new System.Windows.Forms.Button();
             this.lblSeed = new System.Windows.Forms.Label();
             this.lblTreeOutput = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbldisplaySeed = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtMaxResults = new System.Windows.Forms.TextBox();
+            this.lblDisplayTree = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtSeed
             // 
-            this.txtSeed.Location = new System.Drawing.Point(172, 114);
+            this.txtSeed.Location = new System.Drawing.Point(162, 60);
+            this.txtSeed.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSeed.Name = "txtSeed";
-            this.txtSeed.Size = new System.Drawing.Size(100, 20);
+            this.txtSeed.Size = new System.Drawing.Size(204, 22);
             this.txtSeed.TabIndex = 0;
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(172, 140);
+            this.btnGenerate.Location = new System.Drawing.Point(80, 151);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(100, 23);
+            this.btnGenerate.Size = new System.Drawing.Size(205, 28);
             this.btnGenerate.TabIndex = 1;
-            this.btnGenerate.Text = "&Generate Poem ";
+            this.btnGenerate.Text = "&Generate List of Words";
             this.btnGenerate.UseVisualStyleBackColor = true;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // lblSeed
             // 
             this.lblSeed.AutoSize = true;
-            this.lblSeed.Location = new System.Drawing.Point(12, 121);
+            this.lblSeed.Location = new System.Drawing.Point(21, 69);
+            this.lblSeed.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSeed.Name = "lblSeed";
-            this.lblSeed.Size = new System.Drawing.Size(95, 13);
+            this.lblSeed.Size = new System.Drawing.Size(88, 17);
             this.lblSeed.TabIndex = 2;
-            this.lblSeed.Text = "Enter Seed Word: ";
+            this.lblSeed.Text = "Enter Word: ";
             // 
             // lblTreeOutput
             // 
             this.lblTreeOutput.AutoSize = true;
-            this.lblTreeOutput.Location = new System.Drawing.Point(12, 199);
+            this.lblTreeOutput.Location = new System.Drawing.Point(21, 200);
+            this.lblTreeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTreeOutput.Name = "lblTreeOutput";
-            this.lblTreeOutput.Size = new System.Drawing.Size(98, 13);
+            this.lblTreeOutput.Size = new System.Drawing.Size(152, 17);
             this.lblTreeOutput.TabIndex = 3;
-            this.lblTreeOutput.Text = "[Word Output here]";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Instructions: ";
+            this.lblTreeOutput.Text = "Words that rhyme with ";
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(197, 428);
+            this.btnExit.Location = new System.Drawing.Point(263, 527);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(100, 28);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "&Exit";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(109, 24);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(147, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Find words that rhyme";
+            // 
+            // lbldisplaySeed
+            // 
+            this.lbldisplaySeed.AutoSize = true;
+            this.lbldisplaySeed.Location = new System.Drawing.Point(180, 200);
+            this.lbldisplaySeed.Name = "lbldisplaySeed";
+            this.lbldisplaySeed.Size = new System.Drawing.Size(30, 17);
+            this.lbldisplaySeed.TabIndex = 7;
+            this.lbldisplaySeed.Text = "lbl2";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(21, 107);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(146, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Max number of words:";
+            // 
+            // txtMaxResults
+            // 
+            this.txtMaxResults.Location = new System.Drawing.Point(310, 102);
+            this.txtMaxResults.Name = "txtMaxResults";
+            this.txtMaxResults.Size = new System.Drawing.Size(53, 22);
+            this.txtMaxResults.TabIndex = 9;
+            // 
+            // lblDisplayTree
+            // 
+            this.lblDisplayTree.AutoSize = true;
+            this.lblDisplayTree.Location = new System.Drawing.Point(24, 237);
+            this.lblDisplayTree.Name = "lblDisplayTree";
+            this.lblDisplayTree.Size = new System.Drawing.Size(88, 17);
+            this.lblDisplayTree.TabIndex = 10;
+            this.lblDisplayTree.Text = "Display Tree";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 463);
-            this.Controls.Add(this.btnExit);
+            this.ClientSize = new System.Drawing.Size(379, 570);
+            this.Controls.Add(this.lblDisplayTree);
+            this.Controls.Add(this.txtMaxResults);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbldisplaySeed);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.lblTreeOutput);
             this.Controls.Add(this.lblSeed);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.txtSeed);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Rhymes Generator";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,8 +163,12 @@
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Label lblSeed;
         private System.Windows.Forms.Label lblTreeOutput;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbldisplaySeed;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtMaxResults;
+        private System.Windows.Forms.Label lblDisplayTree;
     }
 }
 
