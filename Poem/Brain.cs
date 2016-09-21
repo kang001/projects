@@ -22,7 +22,7 @@ namespace Poem
             this.getWord = word;
             this.getSyllables = syllables; 
         }
-
+        //added some more comments
         
         
         public string GetDisplayText(string sep)
