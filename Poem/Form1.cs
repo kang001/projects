@@ -34,6 +34,9 @@ namespace Poem
 
             //this statement stores the string returned from the GetRhymes method to a variable 
             //string displayTree = Brain.GetRhymes(seedString);
+
+            Brain brainClass = new Brain();
+            lblDisplayTree.Text = brainClass.word;
             
             
         }

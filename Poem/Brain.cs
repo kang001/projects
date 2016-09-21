@@ -11,6 +11,14 @@ namespace Poem
     {
         MakeBrain newBrain = new MakeBrain();
 
+        
+
+        public string word { get; set; }
+        public int freq { get; set; }
+        public int score { get; set; }
+        public string flags { get; set; }
+        public string syllables { get; set; }
+
         public Brain(string jsonWeHope)
         {
             JObject jObject = JObject.Parse(jsonWeHope);
@@ -21,12 +29,6 @@ namespace Poem
             flags = (string)jBrain["flags"];
             syllables = (string)jBrain["syllables"];
         }
-
-        public string word { get; set; }
-        public int freq { get; set; }
-        public int score { get; set; }
-        public string flags { get; set; }
-        public string syllables { get; set; }
 
         public Brain() { }
 
