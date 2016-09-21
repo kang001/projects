@@ -4,12 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace Poem
 {
     class Brain
     {
-        private string word;
-        private int syllables;
+        public string word { get; set; }
+        public int freq { get; set; }
+        public int score { get; set; }
+        public string flags { get; set; }
+        public string syllables { get; set; }
 
         public Brain() { }
 
@@ -19,31 +23,11 @@ namespace Poem
             this.getSyllables = syllables; 
         }
 
-        public string getWord
-        {
-            get
-            {
-                return word;
-            }
-            set
-            {
-                word = value;
-            }
-        }
-        public int getSyllables
-        {
-            get
-            {
-                return syllables;
-            }
-            set
-            {
-                syllables = value;
-            }
-        }
+        
+        
         public string GetDisplayText(string sep)
         {
-            return word.ToString("c") + sep + syllables; 
+            return word.ToString() + sep + syllables; 
         }
     }
 }

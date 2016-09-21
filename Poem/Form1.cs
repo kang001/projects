@@ -37,6 +37,7 @@ namespace Poem
 
             WebResponse resp = request.GetResponse();
             Console.Write(resp);
+            //string displayTree = resp.ToString;
 
             Stream data = resp.GetResponseStream();
 
