@@ -47,7 +47,9 @@ namespace Poem
 
         private void Form1_Load(object sender, EventArgs e)
         { //on form load, send api request to rhyme brain 
-            WebRequest request = WebRequest.Create("http://rhymebrain.com/talk?function=getRhymes&word=kitten");
+            int maxResults = 5; //arbritrayry number for testing purposes 
+            string seedString = txtSeed.ToString();
+            WebRequest request = WebRequest.Create("http://rhymebrain.com/talk?function=getRhymes" + "&word=" + seedString + "&maxResults=" + maxResults + "&jsonp=RhymeBrainResponse";
             WebResponse resp = request.GetResponse();
             Console.Write(resp);
 
@@ -60,12 +62,6 @@ namespace Poem
             /*this api has a request parameter that allows the user 
              * to choose however many rhyming words they want returned
             */
-
-            //more comments 
-            int randomVariable = 5;
-            int randomVariables = 6;
-            //more comments
-            //EVEN MORE COMMENTS
 
             // DataContractJsonSerializer js = new DataContractJsonSerializer(typeof(WebResponse));
 
